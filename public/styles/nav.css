@@ -9,6 +9,21 @@ nav {
   justify-content: space-between;
 }
 
+
 span {
   font-family: Bungee;
+}
+
+
+i {
+  display: block;
+  color: crimson;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.right-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
