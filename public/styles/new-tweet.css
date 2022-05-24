@@ -13,48 +13,41 @@
 </main> */
 
 
-/* form {
-  display: flex;
-  flex-direction: column;
-  background-color: #f4f1ec;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}*/
+
+ label {
+   display: flex;
+   font-weight: 700;
+   flex-direction: column;
+ }
+
+ textarea {
+   height: 65px;
+   width: 400px;
+   border: 0ch;
+   background-color: #f4f1ec;
+   border-bottom: .2rem solid;
+ }
 
 
-label {
- font-weight: 700;
-} 
+ div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
 
-textarea {
-  height: 65px;
-  width: 600px;
-  background-color: #f4f1ec;
-  border-bottom: black, solid; 
-}
+ button {
+   display: flex;
+   align-items: baseline;
+   color: #FFFFFF;
+   background-color: #4056A1;
+   font-family: Bungee, sans-serif;
+ }
 
-
-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-button {
-  display: flex;
-  align-items: baseline;
-  color: #FFFFFF;
-  background-color: #4056A1;
-  font-family: Bungee, sans-serif;
-}
-
-output {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  color: black;
-  background-color: #f4f1ec;
-  font-family: Bungee, sans-serif;
-}
+ output {
+   display: flex;
+   justify-content: flex-end;
+   align-items: baseline;
+   color: black;
+   background-color: #f4f1ec;
+   font-family: Bungee, sans-serif;
+ }
