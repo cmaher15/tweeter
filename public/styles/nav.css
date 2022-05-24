@@ -11,19 +11,22 @@ nav {
 
 
 span {
-  font-family: Bungee;
+  font-family: Bungee, sans-serif;
 }
 
 
 i {
-  display: block;
   color: crimson;
-  justify-content: end;
-  align-items: baseline;
 }
 
 .right-display {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+p {
+  justify-content: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
