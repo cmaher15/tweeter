@@ -1,0 +1,60 @@
+ /* <main class="container">
+ <section class="new-tweet">
+   <h2>Compose Tweet</h2>
+   <form class="form-inline" action="/tweets/" method="POST">
+     <label for="tweet-text">What are you humming about?</label>
+     <textarea name="text" id="tweet-text"></textarea>
+     <div>
+       <button type="submit">Tweet</button>
+       <output name="counter" class="counter" for="tweet-text">140</output>
+     </div>
+   </form>
+ </section>
+</main> */
+
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f1ec;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
+label {
+ font-weight: 700;
+} 
+
+textarea {
+  height: 65px;
+  width: 600px;
+  background-color: #f4f1ec;
+  border-bottom: black, solid; 
+}
+
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  display: flex;
+  align-items: baseline;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  font-family: Bungee, sans-serif;
+}
+
+output {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  color: black;
+  background-color: #f4f1ec;
+  font-family: Bungee, sans-serif;
+}
