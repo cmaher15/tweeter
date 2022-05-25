@@ -1,0 +1,37 @@
+section.tweets {
+  background-color: #f4f1ec;
+  height: 215px;
+  margin-top: 60px;
+  border: .15em solid black;
+}
+
+article.tweets header {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-bottom: 75px;
+  background-color: #f4f1ec;
+  background-image: none;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.tag {
+  color:cadetblue
+}
+
+article.tweets footer {
+  display: flex;
+  border: none;
+  width: 95%;
+  margin: auto;
+  border-top: .15em solid black;
+  font-size: medium;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+p.images {
+  color:cadetblue
+}
