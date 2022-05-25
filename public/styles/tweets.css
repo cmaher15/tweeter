@@ -1,37 +1,87 @@
+/*Main CSS for Tweet Section*/
+
 section.tweets {
   background-color: #f4f1ec;
-  height: 215px;
+  height: fit-content;
   margin-top: 60px;
+  margin-bottom: 30px;
   border: .15em solid black;
 }
 
+/*Hover CSS for Tweet Section*/
+
+section.tweets:hover {
+  box-shadow: 5px 5px darkgoldenrod;
+}
+
+/*Main CSS for Header*/
 article.tweets header {
   display: flex;
   flex-direction: row;
+  height: fit-content;
+  align-items: center;
   padding: 20px;
-  padding-bottom: 75px;
   background-color: #f4f1ec;
   background-image: none;
-  height: fit-content;
+}
+
+/*CSS for the name on left*/
+header div.name {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-p.tag {
-  color:cadetblue
+/*CSS for Names in header*/
+header h3 {
+  padding-right: 5px;
 }
 
+/*CSS for Tagname on righthand side*/
+header h3.color {
+  color: cadetblue;
+}
+
+/*CSS for Tweet body*/
+article.tweets div.tweet {
+  display: flex;
+  overflow-wrap: anywhere;
+  padding: 10px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: x-large;
+  margin: 0 1em;
+  ;
+}
+
+
+/*Main CSS for footer*/
 article.tweets footer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: none;
   width: 95%;
+  height: fit-content;
   margin: auto;
   border-top: .15em solid black;
+  padding-top: .40em;
+  padding-bottom: .40em;
   font-size: medium;
-  justify-content: center;
-  align-items: flex-end;
 }
 
+/* Icons in Footer: */
+
 p.images {
-  color:cadetblue
+  color: cadetblue;
+  padding: .15em;
+}
+
+p.images i:hover {
+  color: darkgoldenrod;
 }
