@@ -53,3 +53,12 @@
    background-color: #f4f1ec;
    font-family: Bungee, sans-serif;
  }
+
+ .red-font {
+   display: flex;
+   justify-content: flex-end;
+   align-items: baseline;
+   color: red;
+   background-color: #f4f1ec;
+   font-family: Bungee, sans-serif;
+ }
