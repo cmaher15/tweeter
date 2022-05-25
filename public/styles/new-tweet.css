@@ -12,6 +12,7 @@ textarea {
   height: 50px;
   width: 100%;
   border: 0ch;
+  resize: none;
   background-color: #f4f1ec;
   border-bottom: .2rem solid;
 }
