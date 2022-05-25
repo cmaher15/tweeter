@@ -4,6 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// const { send } = require("express/lib/response");
+
 // const text = require("body-parser/lib/types/text");
 
 const data = [
@@ -31,14 +33,14 @@ const data = [
   }
 ];
 
-$( document ).ready(function() {
+$(document).ready(function() {
   const renderTweets = function(tweets) {
     for (let data of tweets) {
       const $newData = createTweetElement(data);
       $('.tweets-container').append($newData);
     }
   };
-  
+
   const createTweetElement = function(tweet) {
     const $tweet = (`
     <article class="tweets">
@@ -56,11 +58,24 @@ $( document ).ready(function() {
       </footer>
   
     </article>`);
-  
+
     return $tweet;
   };
-  
+
   renderTweets(data);
+
+
+  $('form').on('submit', (evt) => {
+    evt.preventDefault();
+    let sendData = $('form').serialize();
+    console.log(sendData);
+    $.post('/tweets', sendData);
+    console.log('did this work?!');
+  });
 });
+
+
+
+
 
 
