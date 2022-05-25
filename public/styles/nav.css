@@ -6,7 +6,7 @@ nav {
   width: 100%;
   padding: 1.5em;
   color: #FFFFFF;
-  background-color: #4056A1;
+  background-color: #006666;
   font-size: 24px;
   justify-content: space-between;
 }
@@ -18,7 +18,7 @@ span {
 
 
 nav i {
-  color: crimson;
+  color: #66CDAA
 }
 
 .right-display {
