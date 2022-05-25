@@ -1,6 +1,12 @@
 /*Main CSS for Tweet Section*/
 
-section.tweets {
+section.tweets-container {
+  background-color: #f4f1ec;
+  height: fit-content;
+}
+
+
+article.tweets {
   background-color: #f4f1ec;
   height: fit-content;
   margin-top: 60px;
@@ -10,8 +16,8 @@ section.tweets {
 
 /*Hover CSS for Tweet Section*/
 
-section.tweets:hover {
-  box-shadow: 5px 5px #66CDAA
+article.tweets:hover {
+  box-shadow: 5px 5px #66CDAA;
 }
 
 /*Main CSS for Header*/
@@ -41,7 +47,7 @@ header h3.color {
 }
 
 /*CSS for Tweet body*/
-article.tweets div.tweet {
+article.tweets div.tweet-text {
   overflow-wrap: anywhere;
   padding-bottom: 20px;
   font-weight: 700;
