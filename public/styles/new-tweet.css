@@ -32,6 +32,10 @@ button {
   font-family: Bungee, sans-serif;
 }
 
+button:hover {
+  background-color: cadetblue;
+}
+
 output {
   display: flex;
   justify-content: flex-end;
