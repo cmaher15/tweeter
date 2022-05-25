@@ -17,24 +17,17 @@ section.tweets:hover {
 /*Main CSS for Header*/
 article.tweets header {
   display: flex;
-  flex-direction: row;
   height: fit-content;
   align-items: center;
   padding: 20px;
-  background-color: #f4f1ec;
-  background-image: none;
 }
 
 /*CSS for the name on left*/
 header div.name {
-  display: flex;
-  flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*CSS for Names in header*/
@@ -49,9 +42,7 @@ header h3.color {
 
 /*CSS for Tweet body*/
 article.tweets div.tweet {
-  display: flex;
   overflow-wrap: anywhere;
-  padding: 10px;
   padding-bottom: 20px;
   font-weight: 700;
   font-size: x-large;
@@ -63,9 +54,7 @@ article.tweets div.tweet {
 /*Main CSS for footer*/
 article.tweets footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  border: none;
   width: 95%;
   height: fit-content;
   margin: auto;

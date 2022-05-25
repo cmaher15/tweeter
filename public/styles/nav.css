@@ -1,3 +1,8 @@
+body{
+  overscroll-behavior: none;
+}
+
+
 nav {
   display: flex;
   position: fixed;
