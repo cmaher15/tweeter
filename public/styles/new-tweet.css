@@ -12,9 +12,15 @@ textarea {
   height: 50px;
   width: 100%;
   border: 0ch;
+  margin-top: 10px;
   resize: none;
   background-color: #f4f1ec;
   border-bottom: .2rem solid;
+}
+
+textarea:focus{
+  outline: none;
+  box-shadow: 0 0 10px #006666;
 }
 
 
