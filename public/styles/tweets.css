@@ -11,7 +11,7 @@ section.tweets {
 /*Hover CSS for Tweet Section*/
 
 section.tweets:hover {
-  box-shadow: 5px 5px darkgoldenrod;
+  box-shadow: 5px 5px #66CDAA
 }
 
 /*Main CSS for Header*/
@@ -83,5 +83,5 @@ p.images {
 }
 
 p.images i:hover {
-  color: darkgoldenrod;
+  color: #66CDAA
 }
