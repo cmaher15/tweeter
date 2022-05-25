@@ -12,5 +12,7 @@ const onInput = function() {
   $counter.text($length);
   if ($length <= 0) {
     $counter.addClass("red-font");
+  } else {
+    $counter.removeClass("red-font");
   }
 };
