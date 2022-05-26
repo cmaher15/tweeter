@@ -46,14 +46,18 @@ $(document).ready(function() {
     return $tweet;
   };
 
+  $('.error').hide();
 
   $('form').on('submit', (evt) => {
+    $('.error').slideUp();
     evt.preventDefault();
     if ($('textarea').val().length === 0) {
-      alert("You must not leave this space empty!");
+      $('.error-msg').text("Whoopsie! Your tweet can't be blank. Please try again.");
+      $('.error').slideDown();
       return;
     } if ($('textarea').val().length > 140) {
-      alert("Your tweet must not exceed 140 characters!");
+      $('.error-msg').text("Whoopsie! Your tweet is too long. Please try again.");
+      $('.error').slideDown();
       return;
     }
 
