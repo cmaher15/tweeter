@@ -8,7 +8,7 @@
 
 // const text = require("body-parser/lib/types/text");
 
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -16,6 +16,10 @@ const escape = function (str) {
 
 
 $(document).ready(function() {
+
+
+
+
   jQuery("time.timeago").timeago();
   const renderTweets = function(tweets) {
     for (let data of tweets) {
@@ -78,8 +82,21 @@ $(document).ready(function() {
 
   loadTweets();
 
-
+  $('#bounce').on('click', () => {
+    $("form").slideToggle("slow", function() {
+      $("textarea").focus();
+    });
+  });
 });
+
+
+//   const bounceButton = function() {
+//     console.log($("#bounce"))
+//   $("#bounce").slideDown();
+//   }
+
+//   bounceButton();
+
 
 
 
