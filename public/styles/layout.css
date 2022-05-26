@@ -41,3 +41,11 @@ main {
   align-items: center;
 }
 
+main div.uparrow {
+  color: #006666;
+  font-size: 75px;
+}
+
+main div.uparrow:hover {
+  color: #66CDAA;
+}
