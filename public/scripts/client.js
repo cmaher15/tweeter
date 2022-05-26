@@ -87,6 +87,12 @@ $(document).ready(function() {
       $("textarea").focus();
     });
   });
+
+  $('.uparrow').on('click', () => {
+    $(".new-tweet").scrollTop("slow");
+    $("textarea").focus();
+  });
+  ;
 });
 
 
