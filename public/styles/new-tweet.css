@@ -18,7 +18,7 @@ textarea {
   border-bottom: .2rem solid;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
   box-shadow: 0 0 10px #006666;
 }
@@ -83,4 +83,24 @@ div.error {
   justify-content: space-around;
   align-items: center;
 
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 50%;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
