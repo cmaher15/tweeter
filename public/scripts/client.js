@@ -43,6 +43,14 @@ $(document).ready(function() {
 
   $('form').on('submit', (evt) => {
     evt.preventDefault();
+    if ($('textarea').val().length === 0) {
+      alert("You must not leave this space empty!");
+      return;
+    } if ($('textarea').val().length > 140) {
+      alert("Your tweet must not exceed 140 characters!");
+      return;
+    }
+
     let sendData = $('form').serialize();
     $.post('/tweets', sendData)
       .then(() => {
