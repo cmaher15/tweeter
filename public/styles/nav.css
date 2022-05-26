@@ -24,7 +24,12 @@ span {
 
 
 nav i {
-  color: #66CDAA
+  color: #66CDAA;
+  position: relative;
+}
+
+nav i:hover {
+  color: rgb(240, 215, 23);
 }
 
 .right-display {
