@@ -82,20 +82,12 @@ $(document).ready(function() {
 
   loadTweets();
 
-  $('#bounce').on('click', () => {
-    $("form").slideToggle("slow", function() {
+  $('.right-display').on('click', () => {
+    $(".new-tweet").slideToggle("slow", function() {
       $("textarea").focus();
     });
   });
 });
-
-
-//   const bounceButton = function() {
-//     console.log($("#bounce"))
-//   $("#bounce").slideDown();
-//   }
-
-//   bounceButton();
 
 
 
