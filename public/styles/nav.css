@@ -23,20 +23,21 @@ span {
 }
 
 
-nav i {
-  color: #66CDAA;
-  position: relative;
-}
-
-nav i:hover {
-  color: rgb(240, 215, 23);
-}
-
 .right-display {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
+.right-display i {
+  color: #66CDAA;
+}
+
+.right-display i:hover {
+  color: #ccff99;
+}
+
 
 p {
   justify-content: center;
