@@ -60,3 +60,27 @@ output {
   background-color: #f4f1ec;
   font-family: Bungee, sans-serif;
 }
+
+div.error {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: rgb(157, 5, 5);
+  font-size: xx-large;
+  align-items: center;
+  height: fit-content;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border: .15em solid rgb(157, 5, 5)
+}
+
+.error-msg {
+  overflow-wrap: anywhere;
+  height: fit-content;
+  font-size: x-large;
+  margin: 0 1em;
+  justify-content: space-around;
+  align-items: center;
+
+}
