@@ -8,6 +8,12 @@
 
 // const text = require("body-parser/lib/types/text");
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 
 $(document).ready(function() {
   jQuery("time.timeago").timeago();
@@ -23,13 +29,13 @@ $(document).ready(function() {
     const $tweet = (`
     <article class="tweets">
       <header>
-      <div><img src=${tweet.user.avatars}></div>
-      <div class="name"><h3>${tweet.user.name}</h3>
-       <h3 class="color">${tweet.user.handle}</h3></div>
+      <div><img src=${escape(tweet.user.avatars)}></div>
+      <div class="name"><h3>${escape(tweet.user.name)}</h3>
+       <h3 class="color">${escape(tweet.user.handle)}</h3></div>
       </header>
-      <div class="tweet-text">${tweet.content.text}</div>
+      <div class="tweet-text">${escape(tweet.content.text)}</div>
       <footer>
-        ${newDate}
+        ${escape(newDate)}
         <p class="images"><i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
         <i class="fa-solid fa-heart"></i></p>
