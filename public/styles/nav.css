@@ -1,4 +1,4 @@
-body{
+body {
   overscroll-behavior: none;
 }
 
@@ -31,6 +31,7 @@ span {
 
 
 .right-display i {
+  padding-top: 5px;
   color: #66CDAA;
 }
 
