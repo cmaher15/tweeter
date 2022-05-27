@@ -4,6 +4,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
+This app allows for tweets to be posted without having to refresh! The tweets are organized in descending order, from most recent post to the oldest. There are custom error messages for if you attempt to post an empty tweet, or one that is over the 140 character limit. The app also comes equipped with two layouts, the standard mobile layout, and a slightly different layout for screens at 1024px or larger. When clicked, the arrow in the nav bar will automatically populate the text field so you can post a new tweet! How fun is that?!
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

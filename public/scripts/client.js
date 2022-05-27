@@ -4,12 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// const { send } = require("express/lib/response");
+// const { send } = require('express/lib/response');
 
-// const text = require("body-parser/lib/types/text");
+// const text = require('body-parser/lib/types/text');
 
 const escape = function(str) {
-  let div = document.createElement("div");
+  let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
@@ -17,7 +17,7 @@ const escape = function(str) {
 
 $(document).ready(function() {
 
-  jQuery("time.timeago").timeago();
+  jQuery('time.timeago').timeago();
   const renderTweets = function(tweets) {
     for (let data of tweets) {
       const $newData = createTweetElement(data);
@@ -68,7 +68,7 @@ $(document).ready(function() {
     $.post('/tweets', sendData)
       .then(() => {
         loadTweets();
-        $('textarea').val("").trigger("keyup");
+        $('textarea').val("").trigger('keyup');
       });
 
   });
@@ -82,14 +82,14 @@ $(document).ready(function() {
   loadTweets();
 
   $('.right-display').on('click', () => {
-    $(".new-tweet").slideToggle("slow", function() {
-      $("textarea").focus();
+    $('.new-tweet').slideToggle('slow', function() {
+      $('textarea').focus();
     });
   });
 
 
   $('#topbtn').on('click', () => {
-    $("textarea").focus();
+    $('textarea').focus();
   });
 
 });
