@@ -15,14 +15,12 @@ h2 {
   color: #293d3d
 }
 
-
 header.profile img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
-
 
 @media (min-width: 1024px) {
   header.profile {

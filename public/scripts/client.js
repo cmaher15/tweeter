@@ -17,9 +17,6 @@ const escape = function(str) {
 
 $(document).ready(function() {
 
-
-
-
   jQuery("time.timeago").timeago();
   const renderTweets = function(tweets) {
     for (let data of tweets) {
@@ -50,7 +47,9 @@ $(document).ready(function() {
     return $tweet;
   };
 
+
   $('.error').hide();
+
 
   $('form').on('submit', (evt) => {
     $('.error').slideUp();
@@ -88,14 +87,12 @@ $(document).ready(function() {
     });
   });
 
-  $('.uparrow').on('click', () => {
-    $(".new-tweet").scrollTop("slow");
+
+  $('#topbtn').on('click', () => {
     $("textarea").focus();
   });
-  ;
+
 });
-
-
 
 
 

@@ -31,6 +31,7 @@ body {
 /*
  * Main layout CSS 
  */
+
 main {
   display: flex;
   flex-direction: column;
@@ -42,6 +43,8 @@ main {
 }
 
 main div.uparrow {
+  margin-left: 97%;
+  justify-content: center;
   color: #006666;
   font-size: 75px;
 }
